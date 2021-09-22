@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>EMIR GLOBAL TREND</title>
+    <link rel="stylesheet" href="../css/style.min.css" />
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/png" />
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-5RRZSPQ');
+    </script>
+    <!-- End Google Tag Manager -->
+  </head>
+  <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5RRZSPQ"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="calc">
+      <div class="calc__container container">
+        <header class="calc__header">
+          <img
+            class="calc__header-logo"
+            src="../img/calc/building.svg"
+            alt=""
+          />
+          <img class="calc__header-text" src="../img/magnit/logo.svg" alt="" />
+        </header>
+        <h1 class="calc__title">Рассчитай свою прибыль от инвестиций</h1>
+        <div class="calc__graph">
+          <div class="calc__graph-left">
+            <div class="calc__graph-left-inner calc__graph-left-inner-desc">
+              <h4 class="calc__graph-left-title">Выбери размер депозита:</h4>
+              <div class="calc__graph-left-items">
+                <p class="calc__graph-left-item js-price">$ <span>100</span></p>
+                <p class="calc__graph-left-item js-price active">
+                  $ <span>300</span>
+                </p>
+                <p class="calc__graph-left-item js-price">$ <span>500</span></p>
+                <p class="calc__graph-left-item js-price">
+                  $ <span>1 000</span>
+                </p>
+                <p class="calc__graph-left-item js-price">
+                  $ <span>3 000</span>
+                </p>
+                <p class="calc__graph-left-item js-price">
+                  $ <span>5 000</span>
+                </p>
+                <p class="calc__graph-left-item js-price">
+                  $ <span>10 000</span>
+                </p>
+                <p class="calc__graph-left-item js-price">
+                  $ <span>20 000</span>
+                </p>
+                <p class="calc__graph-left-item js-price">
+                  $ <span>30 000</span>
+                </p>
+                <p class="calc__graph-left-item js-price">
+                  $ <span>50 000</span>
+                </p>
+              </div>
+            </div>
+            <div class="calc__graph-left-inner calc__graph-left-inner-mob">
+              <h4 class="calc__graph-left-title">Выбери размер депозита:</h4>
+              <p class="calc__title">$ <span class="js__price">300</span></p>
+              <div class="calc__graph-form">$100</div>
+              <!-- <div class="calc__graph-dots">
+                <b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b
+                ><b></b>
+              </div> -->
+              <div class="range__list" id="tickmarks-pr">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <input
+                class="input-amm"
+                type="range"
+                list="tickmarks-pr"
+                min="0"
+                max="10"
+                value="2"
+                steps="1"
+              />
+
+              <div class="calc__graph-to">$50 000</div>
+            </div>
+            <div
+              class="calc__graph-left-inner calc__graph-left-inner-mob js__calc_mob_2_1"
+              style="margin-top: -10px; padding-top: 20px"
+            >
+              <h4 class="calc__graph-left-title">На срок:</h4>
+              <p class="calc__title"><span class="js__mounts">5</span> мес.</p>
+              <div class="calc__graph-form">1 мес.</div>
+              <!-- <div class="calc__graph-dots">
+                <b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b
+                ><b></b><b></b><b></b>
+              </div> -->
+              <div class="range__list" id="tickmarks-date">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+              <input
+                class="input-moun"
+                type="range"
+                list="tickmarks-date"
+                min="0"
+                max="12"
+                value="5"
+                steps="1"
+              />
+
+              <div class="calc__graph-to">12 мес.</div>
+            </div>
+          </div>
+          <div class="calc__flip">
+            <div class="calc__flip-1">
+              <img src="../img/calc/mob-flip-1.svg" alt="" />
+            </div>
+            <div class="calc__flip-2 active">
+              <img src="../img/calc/mob-flip-2.svg" alt="" />
+            </div>
+          </div>
+          <div class="calc__cur js__calc_mob_2_2">
+            <img src="../img/calc/mob-cur.svg" alt="" />
+            <p class="calc__cur-title">
+              За <span class="js__mounts_2">5</span> месяцев Ты накопишь
+            </p>
+            <h3 class="calc__title" style="margin: 0">
+              $ <span class="js__ammount_cur">375</span>
+            </h3>
+          </div>
+          <!-- <div class="calc__graph-mine-mob js__calc_mob_2_3 active">
+            <h4 class="calc__graph-right-title">Твой доход:</h4>
+            <p class="calc__graph-right-sub">
+              Ты заработаешь ≈<span class="js__approc">600</span> за 1год. Это
+              +200% к вложенной сумме, не считай прибыли от твоей структуры.
+            </p>
+          </div> -->
+          <div class="calc__graph-right js__calc_mob_1_1">
+            <div class="calc__graph-right-over">
+              <div class="calc__graph-right-inner">
+                <div class="calc__graph-right-top">
+                  <h4 class="calc__graph-right-title">Твой доход:</h4>
+                  <p class="calc__graph-right-sub">
+                    Ты заработаешь ≈<span class="js__approc">600</span> за 1год.
+                    Это +200% к вложенной сумме, не считай прибыли от твоей
+                    структуры.
+                  </p>
+                </div>
+                <div class="calc__graph-graph">
+                  <p class="calc__graph-graph-text">$75</p>
+                  <p class="calc__graph-graph-text">$150</p>
+                  <p class="calc__graph-graph-text">$225</p>
+                  <p class="calc__graph-graph-text">$300</p>
+                  <p class="calc__graph-graph-text">$375</p>
+                  <p class="calc__graph-graph-text">$450</p>
+                  <p class="calc__graph-graph-text">$525</p>
+                  <p class="calc__graph-graph-text">$600</p>
+                  <p class="calc__graph-graph-text">$675</p>
+                  <p class="calc__graph-graph-text">$750</p>
+                  <p class="calc__graph-graph-text">$825</p>
+                  <p class="calc__graph-graph-text">$900</p>
+                </div>
+                <div class="calc__graph-right-bottom">
+                  <p class="calc__graph-right-text">1 мес.</p>
+                  <p class="calc__graph-right-text">2 мес.</p>
+                  <p class="calc__graph-right-text">3 мес.</p>
+                  <p class="calc__graph-right-text">4 мес.</p>
+                  <p class="calc__graph-right-text">5 мес.</p>
+                  <p class="calc__graph-right-text">6 мес.</p>
+                  <p class="calc__graph-right-text">7 мес.</p>
+                  <p class="calc__graph-right-text">8 мес.</p>
+                  <p class="calc__graph-right-text">9 мес.</p>
+                  <p class="calc__graph-right-text">10 мес.</p>
+                  <p class="calc__graph-right-text">11 мес.</p>
+                  <p class="calc__graph-right-text">12 мес.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="calc__arr js__calc_mob_1_2">
+            <div class="calc__arr-1">
+              <img src="../img/calc/arr-l.svg" alt="" />
+            </div>
+            <div class="calc__arr-2">
+              <img src="../img/calc/arr-r.svg" alt="" />
+            </div>
+          </div>
+          <div class="calc__graph-mine-mob js__calc_mob_2_3 active">
+            <h4 class="calc__graph-right-title">Твой доход:</h4>
+            <p class="calc__graph-right-sub">
+              Ты заработаешь ≈<span class="js__approc">600</span> за 1год. Это
+              +200% к вложенной сумме, не считай прибыли от твоей структуры.
+            </p>
+          </div>
+        </div>
+        <div class="calc__bottom">
+          <div class="calc__bottom-inner">
+            <p>
+              Это примерный расчет, прибыль зависит от торгов на бирже и
+              инвестиций в недвижимость, а значит, прибыль х3 можно получить
+              гораздо быстрее.
+            </p>
+            <h3>
+              Не затягивай с принятием решения, начинай получать прибыль даже с
+              минимальных вложений уже сегодня
+            </h3>
+            <a href="https://backoffice.emir.global/GN6FLX/" class="calc-btn"
+              >Зарегестрироваться</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../js/libs.min.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+img {
+  max-width: 100%;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: Proxima Nova;
+  font-weight: 400;
+  background-color: #010202;
+  color: #fff;
+}
+button {
+  cursor: pointer;
+}
+button,
+a,
+textarea,
+input,
+select {
+  border: none;
+  outline: none;
+}
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+a {
+  outline: none;
+  display: inline;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+textarea {
+  resize: none;
+}
+section {
+}
+.container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0 7px;
+  max-width: 1160px;
+}
+
+a {
+  transition: 0.4s;
+  color: #232222;
+  &:hover {
+    opacity: 0.8;
+  }
+}
